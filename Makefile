@@ -1,5 +1,5 @@
 CC=gcc
-CFLAGS=-fno-stack-protector -no-pie -m32
+CFLAGS=-fno-stack-protector -no-pie -g -m32
 
-all: vuln.c vuln
-	$(CC) $(CFLAGS) -o vuln vuln.c
+all: pwnme.c
+	$(CC) $(CFLAGS) -o pwnme pwnme.c
